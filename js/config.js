@@ -176,7 +176,8 @@ window.WEDDING = {
       bank: "Lead Bank",
       accountName: "Isreal Hosana",
       accountNumber: "217665623787",
-      routingNumber: "", // ← add the ACH/ABA routing number here (shown if filled)
+      accountType: "Checking",
+      routingNumber: "101019644", // ACH/ABA routing number
       swift: "", // ← add SWIFT/BIC here for international transfers (shown if filled)
     },
   },

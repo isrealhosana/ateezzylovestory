@@ -344,7 +344,7 @@
     toast(msg);
   }
   function giftCard(g, mode) {
-    const rows = [["Bank", g.bank], ["Account name", g.accountName], ["Account number", g.accountNumber, "num"], ["Routing number", g.routingNumber], ["SWIFT / BIC", g.swift]].filter((r) => r[1]);
+    const rows = [["Bank", g.bank], ["Account name", g.accountName], ["Account type", g.accountType], ["Account number", g.accountNumber, "num"], ["Routing number", g.routingNumber], ["SWIFT / BIC", g.swift]].filter((r) => r[1]);
     const block = [`${g.title} account`, ...rows.map(([k, val]) => `${k}: ${val}`)].join("\n");
     const btn = el("button", { class: "btn btn-ghost", type: "button", text: mode === "number" ? "Copy account number" : "Copy account details",
       onclick: () => copy(mode === "number" ? g.accountNumber : block, mode === "number" ? "Account number copied" : "Account details copied") });
